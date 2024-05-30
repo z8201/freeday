@@ -1,0 +1,76 @@
+Analyse van de Vastgestelde Problemen
+Op basis van de verstrekte afbeelding zijn de volgende problemen geïdentificeerd met betrekking tot gebruikersrechten en toegangsrechten op de fileserver SRV001.
+
+Vastgestelde Problemen
+Gebruikers en Groepen
+
+Tjeerd Nickson (Administratie): Geen afwijkingen gemeld.
+Salma Aslan (Administratie): Achternaam is anders in het systeem (Demirci).
+Bjorn Hentges (Magazijn): Geen afwijkingen gemeld.
+Ayoub Ahmadi (Magazijn): Achternaam is anders in het systeem (Ozcan).
+Hanneke Cool (Management): Geen afwijkingen gemeld.
+Younes Bulut (Sales, Administratie): Aan verkeerde groep gekoppeld.
+Annie Stryker (Sales): Geen afwijkingen gemeld.
+Bram Burg (Sales): Niet in de medewerkerslijst van het interview.
+Gast: Rechten op verschillende mappen.
+Rechten op Mappen
+
+Administratie: Administratie, Management, Sales, Annie Stryker.
+Iedereen: Iedereen.
+Magazijn: Magazijn, Management.
+Management: Management, Gast.
+Sales: Sales, Management, Annie Stryker.
+Analyse van Zwakheden en Risico's
+a. Hoe kon dit gebeuren?
+i. Welke zwakheden hebben tot dit incident geleid?
+
+Gebrek aan Beheer van Gebruikersrechten
+
+Gebruikers zijn aan verkeerde groepen gekoppeld of hebben verkeerde achternamen in het systeem.
+Gastaccounts hebben onnodige toegangsrechten tot verschillende mappen.
+Onjuiste Toegangsrechten op Mappen
+
+Mappen hebben onnodige toegangsrechten voor verschillende gebruikers en groepen, waardoor meer mensen toegang hebben tot gevoelige informatie dan nodig.
+ii. Welk risiconiveau heeft elk van deze zwakheden?
+
+Gebrek aan Beheer van Gebruikersrechten
+
+Hoog Risico: Onjuiste gebruikersinformatie en verkeerde groepskoppelingen kunnen leiden tot ongeautoriseerde toegang en mogelijk gegevenslekken.
+Onjuiste Toegangsrechten op Mappen
+
+Hoog Risico: Toegangsrechten die niet goed zijn ingesteld, kunnen leiden tot ongeautoriseerde toegang tot gevoelige gegevens, wat kan resulteren in gegevensverlies of -diefstal.
+b. Wanneer is het gebeurd?
+Het exacte tijdstip is niet gespecificeerd, maar de problemen zijn geïdentificeerd tijdens een controle van de gebruikersrechten en toegangsrechten op de fileserver SRV001.
+c. Over welke informatie zou het concreet kunnen gaan?
+Gegevens van alle afdelingen, inclusief administratieve, management-, magazijn- en salesinformatie.
+Mogelijk gevoelige bedrijfsinformatie, klantgegevens, financiële gegevens, en andere vertrouwelijke informatie.
+d. Hoeveel informatie is buitgemaakt?
+De exacte hoeveelheid buitgemaakte informatie is niet duidelijk, maar gezien de toegang van ongeautoriseerde gebruikers en de rechten van gastaccounts, kan een aanzienlijk volume aan gevoelige gegevens zijn blootgesteld.
+Oplossingen Implementeren
+1. Correcte Informatie en Gebruikersbeheer
+Corrigeer onjuiste gebruikersinformatie:
+Pas de achternamen van Salma Aslan en Ayoub Ahmadi aan in het systeem.
+Verwijder niet-geautoriseerde gebruikers:
+Verwijder Bram Burg en controleer of hij inderdaad niet in de medewerkerslijst voorkomt.
+Pas groepskoppelingen aan:
+Verplaats Younes Bulut naar de juiste groep.
+Verwijder de gebruiker Gast uit alle groepen waar dit niet nodig is.
+2. Aanpassen van Rechten op Mappen
+Administratie:
+Verwijder Management, Sales en Annie Stryker. Alleen Administratie moet toegang hebben.
+Iedereen:
+Controleer of deze map werkelijk voor iedereen toegankelijk moet zijn. Beperk waar mogelijk.
+Magazijn:
+Verwijder Management. Alleen Magazijn moet toegang hebben.
+Management:
+Verwijder Gast. Alleen Management moet toegang hebben.
+Sales:
+Verwijder Management en Annie Stryker. Alleen Sales moet toegang hebben.
+Conclusie
+Door de bovenstaande stappen te volgen en de toegangsrechten en gebruikersinformatie te corrigeren, kan de beveiliging van de fileserver SRV001 aanzienlijk worden verbeterd. Dit minimaliseert het risico van ongeautoriseerde toegang en mogelijke datalekken, en helpt handelsbedrijf Conley om te voldoen aan regelgeving en beveiligingsnormen.
+
+
+
+
+
+
