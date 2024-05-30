@@ -1,0 +1,29 @@
+oegangsrechten Verwijderen
+Open File Explorer
+
+Open File Explorer.
+Navigeer naar de Map waar Gast Toegang Heeft
+
+Ga naar elke map waarvan je de toegangsrechten wilt verwijderen.
+Eigenschappen van de Map Openen
+
+Klik met de rechtermuisknop op de map en selecteer Properties.
+Ga naar het Tabblad Security
+
+Ga naar het tabblad Security.
+Aanpassen van de Toegangsrechten
+
+Klik op de knop Edit om de toegangsrechten aan te passen.
+Zoek naar Guest in de lijst van gebruikers en groepen.
+Selecteer Guest en klik op Remove.
+Wijzigingen Toepassen
+
+Klik op Apply en vervolgens op OK om de wijzigingen op te slaan.
+3. Controleer de Gedeelde Mappen
+Open File Explorer
+
+Open File Explorer.
+Gedeelde Mappen Controleren
+
+Ga naar elke gedeelde map en herhaal het proces van eigenschappen controleren zoals hierboven beschreven.
+Zorg ervoor dat het Guest account geen toegang heeft tot gedeelde mappen.
