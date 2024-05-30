@@ -1,0 +1,68 @@
+Antivirusbeleid
+Op elke client en server dient altijd een standaard antivirusoplossing werkzaam en up-to-date te zijn
+
+Installeer en configureer Windows Defender of een andere antivirusoplossing.
+Bewijs:
+
+Screenshot van geïnstalleerde antivirussoftware.
+Antivirusupdates mogen niet ouder zijn dan 24 uur
+
+Stel automatische updates in voor antivirussoftware.
+Bewijs:
+
+Screenshot van antivirussoftware met recente update.
+Antivirusscans moeten minstens 2 keer per week op ieder gebruikersapparaat worden uitgevoerd
+
+Stel geplande taken in voor Windows Defender om twee keer per week scans uit te voeren.
+Bewijs:
+
+Screenshot van geplande scans in Task Scheduler.
+Het is alleen voor domain administrators mogelijk om antivirusprogramma’s uit te zetten
+
+Stel een GPO in om de mogelijkheid om antivirusprogramma’s uit te schakelen te beperken tot domain administrators.
+Bewijs:
+
+Screenshot van de GPO-instelling.
+Toegangsbeheerbeleid
+Het wachtwoord moet bestaan uit minimaal 12 karakters en maximaal 20 karakters
+
+Configureer een GPO om het wachtwoordbeleid te versterken.
+Ga naar Group Policy Management.
+Maak een nieuwe GPO of bewerk de bestaande.
+Navigeer naar Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Account Policies -> Password Policy.
+Stel de minimale wachtwoordlengte in op 12 karakters.
+Bewijs:
+
+Screenshot van de GPO-instelling voor wachtwoordlengte.
+Inloggen in de bedrijfsnetwerk moet alleen worden toegestaan binnen bepaalde tijdsvensters
+
+Stel een GPO in om logon hours te beperken.
+Ga naar Active Directory Users and Computers.
+Selecteer een gebruiker, ga naar Properties, en stel de Logon Hours in.
+Bewijs:
+
+Screenshot van logon hours-instellingen.
+Toegang tot de gegevens die op de server worden bewaard moet beperkt worden volgens schema
+
+Gebruik NTFS-permissies om toegang tot homedirectory’s en profielen te beperken tot de betreffende gebruiker.
+Voor andere mappen, stel de juiste toegangsniveaus in via Properties -> Security.
+Bewijs:
+
+Screenshot van NTFS-permissies.
+Persoonlijke omgeving
+Gebruikers mogen hun achtergrond niet aanpassen
+
+Stel een GPO in om de achtergrond aan te passen te voorkomen.
+Ga naar User Configuration -> Policies -> Administrative Templates -> Desktop -> Desktop.
+Stel Prevent changing desktop background in op Enabled.
+Bewijs:
+
+Screenshot van de GPO-instelling.
+Gebruikers kunnen de screensaver en timeout tijden niet aanpassen
+
+Stel een GPO in om aanpassingen van screensaverinstellingen te voorkomen.
+Ga naar User Configuration -> Policies -> Administrative Templates -> Control Panel -> Personalization.
+Stel Prevent changing screen saver en Password protect the screen saver in op Enabled.
+Bewijs:
+
+Screenshot van de GPO-instelling.
