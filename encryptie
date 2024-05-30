@@ -1,0 +1,167 @@
+Hier zijn de gedetailleerde stappen om BitLocker in te schakelen op een Windows-systeem en het benodigde bewijs te leveren:
+
+Inschakelen van BitLocker voor Encryptie
+Open Control Panel:
+
+Klik op de Start knop.
+Typ Control Panel in de zoekbalk en druk op Enter.
+Ga naar BitLocker Drive Encryption:
+
+In de Control Panel, navigeer naar System and Security.
+Klik op BitLocker Drive Encryption.
+Schakel BitLocker in voor de benodigde drives:
+
+Klik op Turn on BitLocker naast de drive(s) die je wilt versleutelen.
+Volg de instructies om BitLocker in te schakelen. Dit omvat:
+Het kiezen van een manier om het herstel van de sleutel op te slaan.
+Het kiezen van de hoeveelheid schijfruimte die je wilt versleutelen.
+Het kiezen van de encryptiemodus (gebruik de nieuwe encryptiemodus voor vaste schijven).
+Het starten van het encryptieproces.
+Voltooi het Encryptieproces:
+
+BitLocker begint met het versleutelen van de schijf. Dit kan enige tijd duren, afhankelijk van de grootte van de schijf en de hoeveelheid data die moet worden versleuteld.
+Zorg ervoor dat je computer tijdens dit proces aan blijft en niet wordt uitgeschakeld.
+Bewijs van Ingeschakelde BitLocker
+Open BitLocker Drive Encryption in Control Panel:
+
+Ga terug naar Control Panel -> System and Security -> BitLocker Drive Encryption.
+Maak een Screenshot:
+
+Maak een screenshot van het venster waarin te zien is dat BitLocker is ingeschakeld voor de drive(s). Dit kan worden gedaan door op de Print Screen toets te drukken en de afbeelding te plakken in een programma zoals Paint.
+Sla de screenshot op als bewijs van de ingeschakelde BitLocker.
+Voorbeeld van de Stappen in de Bijlage 3.1
+Encryptiebeleid
+Alle data op clients moeten voorzien zijn van encryptie
+
+Open Control Panel -> System and Security -> BitLocker Drive Encryption.
+Schakel BitLocker in voor alle drives.
+Bewijs:
+
+Screenshot van ingeschakelde BitLocker.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+Volg deze stappen om de BitLocker encryptie in te schakelen en zorg ervoor dat je de screenshots opslaat en toevoegt aan Bijlage 3.1 als bewijs van implementatie.
+
+Alternatief: Encryptie met Windows Device Encryption
+Sommige Windows-versies ondersteunen Device Encryption, een lichtere versie van BitLocker. Dit kan worden gebruikt als BitLocker niet beschikbaar is.
+
+Open Settings:
+
+Klik op de Start knop.
+Klik op Settings (het tandwielicoon).
+Ga naar Update & Security:
+
+Klik op Update & Security.
+Ga naar Device Encryption:
+
+In het menu aan de linkerkant, klik op Device Encryption.
+Als de optie Device Encryption beschikbaar is, schakel deze in.
+Bewijs:
+
+Maak een screenshot van de ingeschakelde Device Encryption.
+Alternatief: Gebruik van Veracrypt
+VeraCrypt is een gratis en open-source schijf-encryptie software. Het biedt een krachtige en flexibele oplossing voor gegevensencryptie.
+
+Download en installeer VeraCrypt:
+
+Ga naar de officiële VeraCrypt-website.
+Download de versie die compatibel is met jouw systeem.
+Installeer VeraCrypt volgens de instructies.
+Versleutel een Schijf of Partitie:
+
+Open VeraCrypt.
+Klik op Create Volume.
+Kies Encrypt a non-system partition/drive en volg de instructies om de schijf of partitie te versleutelen.
+Voltooi het Encryptieproces:
+
+Volg de stappen om de schijf te versleutelen, inclusief het kiezen van een wachtwoord en het encryptie-algoritme.
+VeraCrypt begint met het versleutelen van de schijf.
+Bewijs:
+
+Maak een screenshot van het VeraCrypt-scherm waarin te zien is dat de schijf is versleuteld.
+Voorbeeld van de Stappen in de Bijlage 3.1
+Encryptiebeleid
+Alle data op clients moeten voorzien zijn van encryptie
+
+Gebruik Windows Device Encryption of VeraCrypt om data te versleutelen.
+Bewijs:
+
+Screenshot van ingeschakelde Device Encryption.
+OF
+Screenshot van de versleutelde schijf in VeraCrypt.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+Algemene Aanpak voor Overige Beveiligingseisen
+Antivirusbeleid
+Volg de stappen zoals beschreven om antivirussoftware te installeren en in te stellen.
+
+Toegangsbeheerbeleid
+Gebruik Group Policy Object (GPO) om wachtwoordbeleid, logon hours, en toegangsrechten in te stellen.
+
+Persoonlijke omgeving
+Gebruik GPO om instellingen voor achtergrond, screensaver, en timeouts te beheren.
+
+Conclusie
+Gebruik de bovenstaande methoden om aan de encryptievereisten te voldoen als BitLocker niet beschikbaar is. Voeg de vereiste screenshots toe aan Bijlage 3.1 om de implementatie van de beveiligingseisen te bewijzen.
+
+
+
+
+
+Installatie en Gebruik van VeraCrypt op Windows Server 2019
+1. Download en Installeer VeraCrypt
+Download VeraCrypt:
+
+Ga naar de officiële VeraCrypt-website.
+Download de juiste versie voor Windows.
+Installeer VeraCrypt:
+
+Voer het gedownloade installatieprogramma uit.
+Volg de installatie-instructies om VeraCrypt op je server te installeren.
+2. Versleutel een Schijf of Partitie met VeraCrypt
+Open VeraCrypt:
+
+Start VeraCrypt vanuit het Start-menu of het bureaublad.
+Maak een Encrypted Volume:
+
+Klik op Create Volume.
+Selecteer Encrypt a non-system partition/drive en klik op Next.
+Selecteer de Partitie of Schijf:
+
+Kies de partitie of schijf die je wilt versleutelen en klik op Next.
+Kies de Encryptieopties:
+
+Kies het encryptie-algoritme en hash-algoritme (de standaardinstellingen zijn meestal voldoende) en klik op Next.
+Stel een Wachtwoord In:
+
+Voer een sterk wachtwoord in voor de versleutelde schijf en klik op Next.
+Formatteer de Partitie:
+
+Kies de formatteeropties voor de partitie. Dit kan even duren afhankelijk van de grootte van de partitie.
+Klik op Format om te beginnen met versleutelen.
+Voltooi het Encryptieproces:
+
+Wacht tot VeraCrypt de partitie heeft versleuteld. Dit kan enige tijd duren.
+3. Bewijs van Implementatie
+Maak een Screenshot:
+Maak een screenshot van het VeraCrypt-scherm waarin te zien is dat de schijf is versleuteld.
+Dit kun je doen door op de Print Screen toets te drukken en de afbeelding te plakken in een programma zoals Paint. Sla de screenshot op als bewijs.
+Voorbeeld van de Stappen in de Bijlage 3.1
+Encryptiebeleid
+Alle data op clients moeten voorzien zijn van encryptie
+
+Gebruik VeraCrypt om data te versleutelen.
+Bewijs:
+
+Screenshot van de versleutelde schijf in VeraCrypt.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+Algemene Aanpak voor Overige Beveiligingseisen
+Antivirusbeleid
+Volg de stappen zoals beschreven om antivirussoftware te installeren en in te stellen.
+
+Toegangsbeheerbeleid
+Gebruik Group Policy Object (GPO) om wachtwoordbeleid, logon hours, en toegangsrechten in te stellen.
+
+Persoonlijke omgeving
+Gebruik GPO om instellingen voor achtergrond, screensaver, en timeouts te beheren.
+
+Conclusie
+Gebruik VeraCrypt als alternatief om aan de encryptievereisten te voldoen als BitLocker en Device Encryption niet beschikbaar zijn. Voeg de vereiste screenshots toe aan Bijlage 3.1 om de implementatie van de beveiligingseisen te bewijzen.
