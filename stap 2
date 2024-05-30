@@ -1,0 +1,62 @@
+Risicoanalyse en Beveiligingsmaatregelen voor Fileserver SRV001
+1. Start de Fileserver en Log in
+Start de fileserver SRV001.
+Log in als administrator:
+Bij Windows: Gebruik het wachtwoord T0or1.
+2. Bevestig de Constatering van Ongeautoriseerde Gegevensdownload
+Controleer Bestandsrechten en Delen
+
+Open File Explorer.
+Ga naar de hoofdmap waarin de gegevens zijn opgeslagen.
+Klik met de rechtermuisknop op de map en selecteer Properties.
+Ga naar het tabblad Sharing en klik op Advanced Sharing.
+Controleer welke gebruikers of groepen toegang hebben tot deze map.
+Controleer NTFS Rechten
+
+Ga naar het tabblad Security in de map Properties.
+Bekijk de lijst van gebruikers en groepen en hun respectieve rechten.
+Controleer of er gebruikers of groepen zijn met Full Control die dit niet zouden moeten hebben.
+Test Toegang Zonder Authenticatie
+
+Maak een testaccount aan zonder administratieve rechten.
+Log in met dit testaccount en probeer toegang te krijgen tot de gedeelde map.
+Controleer of het mogelijk is om bestanden te downloaden zonder juiste authenticatie.
+3. Identificatie en Risicoanalyse
+Risico’s geïdentificeerd:
+
+Ongeautoriseerde Toegang: Ongeautoriseerde gebruikers kunnen toegang krijgen tot gevoelige gegevens, wat kan leiden tot datalekken.
+Gegevensintegriteit: Ongeautoriseerde toegang kan resulteren in ongewenste wijzigingen of verwijdering van gegevens.
+Compliancerisico’s: Niet voldoen aan regelgeving zoals de AVG kan leiden tot juridische gevolgen en boetes.
+4. Oplossingen Implementeren
+Wijzig Bestandsrechten en Delen
+
+Ga naar de hoofdmap met gevoelige gegevens.
+Klik met de rechtermuisknop en ga naar Properties.
+Onder het tabblad Sharing, klik op Advanced Sharing.
+Verwijder onnodige gebruikers en groepen die toegang hebben tot de gedeelde map.
+Voeg alleen de benodigde gebruikers of groepen toe met de juiste rechten (bijvoorbeeld alleen lezen of lezen en schrijven).
+Configureer NTFS Rechten Correct
+
+Ga naar het tabblad Security in de map Properties.
+Verwijder alle gebruikers of groepen die geen toegang nodig hebben.
+Configureer de rechten voor de benodigde gebruikers of groepen:
+Read & Execute: Voor gebruikers die alleen gegevens moeten kunnen lezen.
+Modify: Voor gebruikers die gegevens moeten kunnen bewerken.
+Full Control: Alleen voor beheerders.
+Controleer en Test de Nieuwe Configuratie
+
+Log opnieuw in met het testaccount.
+Controleer of het testaccount nu geen toegang heeft tot de gedeelde map of bestanden kan downloaden.
+Herhaal de test met accounts die wel toegang zouden moeten hebben om te verifiëren dat de juiste toegang is ingesteld.
+5. Documentatie en Rapportage
+Documenteer de Wijzigingen
+
+Maak een gedetailleerd verslag van alle wijzigingen die zijn aangebracht, inclusief welke gebruikers en groepen zijn verwijderd of toegevoegd en welke rechten zijn ingesteld.
+Noteer eventuele problemen die tijdens het proces zijn opgetreden en hoe deze zijn opgelost.
+Rapporteer aan de Directie en Leidinggevende
+
+Stel een samenvatting op van de bevindingen en de genomen maatregelen.
+Benadruk de verbeteringen in de beveiliging en de vermindering van risico’s.
+Stel voor om regelmatig audits uit te voeren om de beveiliging te waarborgen.
+Conclusie
+Door de bovenstaande stappen te volgen, wordt ervoor gezorgd dat alleen geautoriseerde gebruikers toegang hebben tot de gegevens op de fileserver SRV001. Dit minimaliseert het risico van ongeautoriseerde toegang en mogelijke datalekken, en helpt handelsbedrijf Conley om te voldoen aan regelgeving en beveiligingsnormen.
