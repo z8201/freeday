@@ -1,0 +1,59 @@
+Hier zijn de stappen om de rechten op mappen aan te passen op een Windows-fileserver:
+
+Aanpassen van Rechten op Mappen in Windows
+Open File Explorer en Navigeer naar de Map
+
+Open File Explorer.
+Navigeer naar de map waarvan je de rechten wilt aanpassen.
+Open de Eigenschappen van de Map
+
+Klik met de rechtermuisknop op de map en selecteer Properties.
+Ga naar het Tabblad Security
+
+In het venster Properties, ga naar het tabblad Security.
+Aanpassen van de Toegangsrechten
+
+Klik op de knop Edit om de toegangsrechten aan te passen.
+In het venster dat verschijnt, zie je een lijst met groepen en gebruikers en hun respectieve rechten.
+Voorbeeld voor de Map "Administratie"
+Verwijder Ongewenste Gebruikers en Groepen:
+Selecteer Management, Sales en Annie Stryker in de lijst en klik op Remove.
+Voeg Nodige Gebruikers en Groepen Toe:
+Klik op Add, typ Administratie in het veld en klik op Check Names om de groep te verifiëren.
+Selecteer de juiste rechten voor Administratie (bijvoorbeeld Read & Execute, Modify).
+Voorbeeld voor de Map "Iedereen"
+Beoordeel Toegankelijkheid:
+Controleer of deze map inderdaad toegankelijk moet zijn voor iedereen. Als dit niet nodig is, verwijder dan Everyone uit de lijst.
+Voeg specifieke gebruikers of groepen toe die toegang nodig hebben en stel de juiste rechten in.
+Voorbeeld voor de Map "Magazijn"
+Verwijder Ongewenste Gebruikers en Groepen:
+Selecteer Management in de lijst en klik op Remove.
+Voeg Nodige Gebruikers en Groepen Toe:
+Voeg de groep Magazijn toe en stel de juiste rechten in (bijvoorbeeld Read & Execute, Modify).
+Voorbeeld voor de Map "Management"
+Verwijder Ongewenste Gebruikers en Groepen:
+Selecteer Gast in de lijst en klik op Remove.
+Voeg Nodige Gebruikers en Groepen Toe:
+Voeg de groep Management toe en stel de juiste rechten in.
+Voorbeeld voor de Map "Sales"
+Verwijder Ongewenste Gebruikers en Groepen:
+Selecteer Management en Annie Stryker in de lijst en klik op Remove.
+Voeg Nodige Gebruikers en Groepen Toe:
+Voeg de groep Sales toe en stel de juiste rechten in.
+Opslaan van de Wijzigingen
+
+Klik op Apply en vervolgens op OK om de wijzigingen op te slaan.
+Herhaal dit proces voor elke map die je wilt aanpassen.
+Verifiëren van de Instellingen
+Maak een Testaccount aan
+
+Maak een testaccount aan zonder administratieve rechten.
+Log in met dit testaccount en controleer of de wijzigingen correct zijn door te proberen toegang te krijgen tot de mappen die nu beperkt zouden moeten zijn.
+Controleer de Toegang van Bevoegde Gebruikers
+
+Log in met accounts die wel toegang zouden moeten hebben tot de mappen en verifieer dat zij de juiste toegang hebben.
+Documentatie
+Documenteer alle wijzigingen die zijn aangebracht, inclusief welke gebruikers en groepen zijn verwijderd of toegevoegd en welke rechten zijn ingesteld.
+Noteer eventuele problemen die tijdens het proces zijn opgetreden en hoe deze zijn opgelost.
+Conclusie
+Door de bovenstaande stappen te volgen, zorg je ervoor dat de toegangsrechten tot de mappen op de fileserver SRV001 correct zijn ingesteld, waardoor de beveiliging wordt verbeterd en alleen geautoriseerde gebruikers toegang hebben tot de juiste gegevens.
