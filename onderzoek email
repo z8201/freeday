@@ -1,0 +1,42 @@
+Begeleidende E-mail
+Van: jouwemail@school.nl
+Aan: opdrachtgever@proeftoets.nl
+CC:
+Onderwerp: Bevindingen en Adviezen voor de Beveiliging van Fileserver SRV001
+Beste Hanneke Cool,
+
+Op uw verzoek heb ik de server gecontroleerd.
+
+Bevindingen:
+Tijdens de controle van fileserver SRV001 zijn problemen met gebruikersrechten en toegangsrechten gevonden. Er waren onjuiste rechten ingesteld, waardoor ongeautoriseerde toegang mogelijk was.
+
+Risico's:
+
+Ongeautoriseerde toegang tot gevoelige gegevens.
+Schending van AVG-wetgeving.
+Verlies van gegevensintegriteit.
+Adviezen:
+
+Gebruikersinformatie Corrigeren:
+
+Pas achternamen van Salma Aslan en Ayoub Ahmadi aan.
+Verwijder Bram Burg.
+Verplaats Younes Bulut naar de juiste groep.
+Verwijder gastaccounts.
+Toegangsrechten Opnieuw Instellen:
+
+Verwijder onnodige gebruikers en groepen uit mappenrechten.
+Zorg dat alleen bevoegde gebruikers toegang hebben.
+Controle en Monitoring:
+
+Voer regelmatig controles uit op gebruikers- en toegangsrechten.
+Implementeer monitoringtools voor verdachte activiteiten.
+Wettelijke Verplichtingen:
+
+AVG-compliance: Bescherm persoonsgegevens en zorg voor juiste toegangscontrole.
+Documentatie: Houd gedetailleerde documentatie bij van wijzigingen en controles.
+Met vriendelijke groet,
+
+[Jouw Naam]
+IT expert - SecureIT
+
