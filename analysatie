@@ -34,3 +34,61 @@ Geavanceerde Monitoring: Implementeer geavanceerde monitoring- en detectiesystem
 Doorlopende Training: Blijf investeren in doorlopende training en bewustwordingscampagnes om ervoor te zorgen dat alle medewerkers up-to-date blijven met de laatste beveiligingspraktijken en -procedures.
 Conclusie
 De interviews met de betrokkenen bij handelsbedrijf Conley laten zien dat er een solide basis is voor cyberbeveiliging binnen het bedrijf, met een sterke nadruk op bewustwording en naleving van regelgeving. Echter, door verbeterde gebruikersrechtenbeheer en geavanceerde monitoring kan de algehele beveiliging verder worden versterkt. Door deze aanbevelingen op te volgen, kan Conley zich beter beschermen tegen potentiële cyberdreigingen en gegevensverlies voorkomen.
+
+
+
+
+
+
+
+
+
+
+
+Voeg op basis van de voorgaande analyse onder het hoofdstuk ‘Advies’ jouw adviezen toe. 
+
+
+Advies
+Op basis van de analyse van de interviews met de betrokkenen bij handelsbedrijf Conley, volgen hier de adviezen om de beveiliging van de ICT-omgeving verder te verbeteren.
+
+1. Verbeteren van Gebruikersrechtenbeheer
+Huidige Situatie:
+De directrice benadrukt het belang van correct instellen en autoriseren van gebruikersrechten, maar er is ruimte voor verbetering in de praktische implementatie hiervan.
+
+Aanbeveling:
+
+Regelmatige Audits: Voer regelmatig audits uit van de gebruikersrechten om ervoor te zorgen dat alleen bevoegde gebruikers toegang hebben tot gevoelige informatie. Dit kan worden gedaan door bijvoorbeeld elk kwartaal een gedetailleerde controle van alle gebruikersaccounts en hun toegangsrechten te plannen.
+Rolgebaseerde Toegang: Implementeer een rolgebaseerd toegangscontrolesysteem (RBAC) waarin gebruikers alleen toegang krijgen tot die gegevens en systemen die zij nodig hebben voor hun functie. Dit minimaliseert het risico van ongeautoriseerde toegang.
+2. Implementeren van Geavanceerde Monitoring- en Detectiesystemen
+Huidige Situatie:
+Er zijn momenteel geen concrete aanwijzingen van ongeautoriseerde activiteiten, maar er is behoefte aan een proactieve benadering om potentiële bedreigingen vroegtijdig te detecteren.
+
+Aanbeveling:
+
+Geavanceerde Monitoringtools: Implementeer geavanceerde monitoringtools zoals een Security Information and Event Management (SIEM) systeem om verdachte activiteiten en afwijkingen in realtime te detecteren. Deze tools kunnen helpen bij het vroegtijdig signaleren van mogelijke bedreigingen door afwijkingen in het normale netwerkverkeer te identificeren.
+Automatische Alerts: Stel automatische alerts in voor verdachte activiteiten zoals meerdere mislukte inlogpogingen, ongebruikelijke toegangspatronen, en wijzigingen in de configuratie van kritieke systemen.
+3. Blijvende Investering in Training en Bewustwording
+Huidige Situatie:
+Het bedrijf heeft een sterke focus op het bewustmaken en trainen van medewerkers om op de hoogte te blijven van cyberdreigingen en beveiligingsprocedures.
+
+Aanbeveling:
+
+Regelmatige Trainingen: Organiseer regelmatige trainingen en workshops voor alle medewerkers om hen op de hoogte te houden van de nieuwste beveiligingsdreigingen en best practices. Deze trainingen moeten minimaal eens per zes maanden plaatsvinden en moeten zowel theoretische kennis als praktische oefeningen omvatten.
+Simulaties van Cyberaanvallen: Voer periodieke simulaties van cyberaanvallen uit (zoals phishing-simulaties) om de medewerkers bewust te maken van mogelijke bedreigingen en hun reacties daarop te testen en te verbeteren.
+4. Naleving van Beveiligingsrichtlijnen en Patches
+Huidige Situatie:
+De naleving van de AVG en andere relevante richtlijnen wordt strikt gehandhaafd, maar er ontbreken soms kritieke beveiligingsupdates.
+
+Aanbeveling:
+
+Patch Management: Stel een formeel patch management programma in om ervoor te zorgen dat alle systemen regelmatig worden bijgewerkt met de nieuwste beveiligingspatches. Dit programma moet een schema bevatten voor het regelmatig controleren op beschikbare updates en het snel installeren ervan.
+Automatische Updates: Configureer systemen zo dat zij beveiligingsupdates automatisch downloaden en installeren. Dit vermindert het risico van kwetsbaarheden die worden uitgebuit door cyberaanvallers.
+5. Evaluatie en Verbetering van Beveiligingsmaatregelen
+Huidige Situatie:
+Het bedrijf is voortdurend bezig met het evalueren en verbeteren van hun beveiligingsmaatregelen.
+
+Aanbeveling:
+
+Beveiligingsbeoordelingen: Voer jaarlijkse beveiligingsbeoordelingen uit met behulp van externe security experts om de effectiviteit van de bestaande beveiligingsmaatregelen te evalueren en te verbeteren. Deze beoordelingen moeten zowel technische als organisatorische aspecten van de beveiliging omvatten.
+Feedback Mechanismen: Implementeer een feedbackmechanisme waarbij medewerkers eenvoudig verdachte activiteiten of beveiligingsproblemen kunnen melden. Dit kan via een speciaal beveiligingsportaal of een hotline.
+Door deze adviezen op te volgen, kan handelsbedrijf Conley de beveiliging van hun ICT-omgeving aanzienlijk verbeteren en beter beschermd zijn tegen cyberdreigingen en gegevensverlies.
