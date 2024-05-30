@@ -1,0 +1,58 @@
+Onderzoeksverslag: Beveiligingsproblemen Fileserver SRV001
+Opdrachtgever: Hanneke Cool, Handelsbedrijf Conley
+Auteur: [Jouw Naam]
+Datum: [Datum]
+Versie: 1.0
+Overzicht van de te onderzoeken onderdelen
+In dit onderzoeksverslag wordt beschreven welke onderdelen zijn onderzocht en welke resultaten dit heeft opgeleverd.
+
+1.1 Aanleiding onderzoek
+Handelsbedrijf Conley heeft geen eigen ICT-afdeling en maakt gebruik van externe ICT-diensten. Tijdens een controle is geconstateerd dat gebruikers zonder de juiste authenticatie gegevens van de fileserver SRV001 kunnen downloaden. Dit kan leiden tot ernstige beveiligingsproblemen zoals datalekken en niet-naleving van regelgeving (AVG). Het doel van dit onderzoek is om de toegangsrechten en gebruikersrechten op de fileserver te controleren en te corrigeren om ongeautoriseerde toegang te voorkomen.
+
+1.2 Uitgevoerd onderzoek
+Starten van de Fileserver en Inloggen
+
+De fileserver SRV001 is gestart en ingelogd als administrator met het wachtwoord T0or1.
+Controle van Bestandsrechten en Delen
+
+De hoofdmap waarin de gegevens zijn opgeslagen, is geïnspecteerd. Gebruikers en groepen met toegang zijn gecontroleerd en onnodige gebruikers zijn verwijderd.
+Controle van NTFS Rechten
+
+In het tabblad Security van de map Properties zijn gebruikers en groepen gecontroleerd op hun rechten. Onnodige rechten zijn verwijderd en alleen noodzakelijke rechten zijn ingesteld voor de betreffende groepen.
+Testen van Toegang Zonder Authenticatie
+
+Een testaccount zonder administratieve rechten is aangemaakt. Dit account heeft geprobeerd toegang te krijgen tot de gedeelde map om te verifiëren of de toegangsrechten correct zijn ingesteld. Ongeautoriseerde toegang is voorkomen na het aanbrengen van de correcties.
+Verifiëren en Corrigeren van Gebruikersinformatie
+
+Gebruikersinformatie is gecontroleerd en gecorrigeerd voor onjuiste achternamen en verkeerde groepskoppelingen.
+Aanpassen van Rechten op Mappen
+
+Voor elke map zijn de rechten aangepast om ervoor te zorgen dat alleen de juiste groepen en gebruikers toegang hebben, zoals beschreven in de onderstaande sectie.
+Conclusie
+Het onderzoek heeft bevestigd dat er onjuiste gebruikersrechten en toegangsrechten op de fileserver SRV001 waren, wat leidde tot potentiële beveiligingsrisico's. Door de rechten aan te passen en onnodige gebruikers te verwijderen, is de beveiliging van de fileserver aanzienlijk verbeterd. Ongeautoriseerde toegang is nu voorkomen en de fileserver voldoet beter aan de AVG-normen.
+
+Aanpassing
+De volgende aanpassingen zijn gedaan om de beveiligingsproblemen op te lossen:
+
+Correcte Gebruikersinformatie
+
+Achternamen van Salma Aslan en Ayoub Ahmadi zijn aangepast.
+Gebruikers Younes Bulut is naar de juiste groep verplaatst.
+Gebruiker Bram Burg is verwijderd omdat hij niet in de medewerkerslijst voorkomt.
+Gebruiker Gast is verwijderd uit alle groepen waar dit niet nodig was.
+Rechten op Mappen
+
+Administratie: Management, Sales en Annie Stryker zijn verwijderd. Alleen Administratie heeft nu toegang.
+Iedereen: Toegang is beperkt tot alleen de noodzakelijke gebruikers.
+Magazijn: Management is verwijderd. Alleen Magazijn heeft nu toegang.
+Management: Gast is verwijderd. Alleen Management heeft nu toegang.
+Sales: Management en Annie Stryker zijn verwijderd. Alleen Sales heeft nu toegang.
+Communicatiematrix
+Probleem	Impact	Met wie contact opnemen
+Rechten verkeerd ingesteld	Gegevens van 1 gebruiker	De betreffende gebruiker
+Rechten verkeerd ingesteld	Gegevens van 1 afdeling	Alle medewerkers binnen de afdeling + de directie
+Rechten verkeerd ingesteld	Groter dan 1 afdeling	De directie
+Configuratiefout fileserver	Gegevens van 1 gebruiker	De betreffende gebruiker
+Configuratiefout fileserver	Gegevens van 1 afdeling	Alle medewerkers binnen de afdeling + de directie
+Configuratiefout fileserver	Groter dan 1 afdeling	De directie
+Door deze maatregelen te implementeren, wordt de beveiliging van de fileserver SRV001 verbeterd en wordt ervoor gezorgd dat alleen geautoriseerde gebruikers toegang hebben tot de juiste gegevens. Dit helpt handelsbedrijf Conley om te voldoen aan de regelgeving en beveiligingsnormen, en minimaliseert het risico op datalekken.
