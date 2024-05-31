@@ -1,0 +1,115 @@
+Updaten van de Security via Group Policy Object (GPO) op Windows Server 2019
+Hieronder volgen de stappen om de vereisten uit bijlage 3.0 te implementeren via Group Policy (GPO) op een Windows Server 2019. Voor bewijs van implementatie, maak je screenshots en voeg je deze toe aan bijlage 3.1.
+
+Encryptiebeleid
+Opmerking: Aangezien BitLocker niet beschikbaar is op jouw systeem, kun je voor encryptie via andere methoden zoals VeraCrypt kiezen en dit buiten GPO beheren.
+
+Antivirusbeleid
+Op elke client en server dient altijd een standaard antivirusoplossing werkzaam en up-to-date te zijn
+
+Bewijs:
+
+Screenshot van geïnstalleerde antivirussoftware (Windows Defender).
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+
+Antivirusupdates mogen niet ouder zijn dan 24 uur
+
+Automatische updates instellen:
+
+Open Windows Defender.
+Ga naar Virus & threat protection en controleer of automatische updates zijn ingeschakeld.
+Bewijs:
+
+Screenshot van antivirussoftware met recente update.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+
+Antivirusscans moeten minstens 2 keer per week op ieder gebruikersapparaat worden uitgevoerd
+
+Geplande scans instellen via Task Scheduler:
+
+Open Task Scheduler.
+Klik op Create Basic Task.
+Geef de taak een naam, bijvoorbeeld Weekly Antivirus Scan.
+Stel de taak in om wekelijks op specifieke dagen uit te voeren.
+Kies Start a program en selecteer MpCmdRun.exe.
+Voeg de parameters -Scan -ScanType 2 toe.
+Bewijs:
+
+Screenshot van de geplande taak in Task Scheduler.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+
+Het is alleen voor domain administrators mogelijk om antivirusprogramma’s uit te zetten
+
+GPO configureren:
+
+Open Group Policy Management Console (GPMC).
+Maak een nieuwe GPO of bewerk een bestaande.
+Navigeer naar Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Windows Defender Antivirus.
+Stel Turn off Windows Defender Antivirus in op Disabled.
+Bewijs:
+
+Screenshot van de GPO-instelling.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+
+Toegangsbeheerbeleid
+Het wachtwoord moet bestaan uit minimaal 12 karakters en maximaal 20 karakters
+
+GPO configureren:
+
+Open Group Policy Management Console (GPMC).
+Maak een nieuwe GPO of bewerk een bestaande.
+Navigeer naar Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Account Policies -> Password Policy.
+Stel de minimale wachtwoordlengte in op 12 karakters.
+Bewijs:
+
+Screenshot van de GPO-instelling.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+
+Inloggen in de bedrijfsnetwerk moet alleen worden toegestaan binnen bepaalde tijdsvensters
+
+Logon hours configureren:
+
+Open Active Directory Users and Computers.
+Selecteer een gebruiker, ga naar Properties, en stel de Logon Hours in.
+Bewijs:
+
+Screenshot van logon hours-instellingen.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+
+Toegang tot de gegevens die op de server worden bewaard moet beperkt worden volgens schema
+
+NTFS-permissies instellen:
+
+Navigeer naar de betreffende map, klik met de rechtermuisknop en ga naar Properties -> Security.
+Pas de toegangsrechten aan zodat alleen bevoegde gebruikers toegang hebben.
+Bewijs:
+
+Screenshot van NTFS-permissies.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+
+Persoonlijke omgeving
+Gebruikers mogen hun achtergrond niet aanpassen
+
+GPO configureren:
+
+Open Group Policy Management Console (GPMC).
+Navigeer naar User Configuration -> Policies -> Administrative Templates -> Desktop -> Desktop.
+Stel Prevent changing desktop background in op Enabled.
+Bewijs:
+
+Screenshot van de GPO-instelling.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+
+Gebruikers kunnen de screensaver en timeout tijden niet aanpassen
+
+GPO configureren:
+
+Navigeer naar User Configuration -> Policies -> Administrative Templates -> Control Panel -> Personalization.
+Stel Prevent changing screen saver en Password protect the screen saver in op Enabled.
+Bewijs:
+
+Screenshot van de GPO-instelling.
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+
+Conclusie
+Door bovenstaande GPO-instellingen te configureren, voldoe je aan de beveiligingseisen uit bijlage 3.0. Maak screenshots van elke stap als bewijs en voeg deze toe aan bijlage 3.1.
