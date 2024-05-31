@@ -1,0 +1,55 @@
+De twee afbeeldingen laten de volgende opdracht zien, waarbij je een security incident bij Apotheek AmeRijck moet aanpakken. Hier is een stap-voor-stap handleiding voor de analyse en aanpak van dit incident:
+
+### Aanpak van een Incident
+
+#### Situatie
+- Server SRV002 draait MySQL Server met een apotheekdatabase waarin medische informatie is opgeslagen over de gasten van het vakantiepark.
+- Er is informatie op een forum gevonden die wijst op een datalek van gegevens uit de database van Apotheek AmeRijck.
+- De opdracht is om de situatie rond SRV002 te onderzoeken.
+
+#### Virtuele Machines
+- VM1 - Windows 2019 (SRV001)
+- VM2 - Windows 2019 (SRV002)
+
+### Opdracht 2.1 Situatieanalyse
+
+1. **Onderzoek naar aanwijzingen op SRV002:**
+   - Onderzoek wat er is gebeurd.
+   - Identificeer welke kwetsbaarheden tot het incident hebben geleid en hun risiconiveau.
+   - Bepaal wanneer het incident heeft plaatsgevonden.
+   - Bepaal welke informatie is buitgemaakt.
+
+2. **Documentatie:**
+   - Gebruik het sjabloon Onderzoeksverslag (Bijlage 2.1) om de situatie vast te leggen.
+   - Vul alle secties in, inclusief methoden en bevindingen.
+
+3. **Communicatie:**
+   - Schrijf een e-mail op basis van Bijlage 2.2 om de bevindingen en de situatie te communiceren aan de betrokkenen.
+   - Specificeer welke stappen moeten worden genomen om de veiligheid te herstellen.
+   - Benoem wettelijke verplichtingen en maatregelen.
+
+### Opdracht 2.2 Correctie van de kwetsbaarheden
+
+1. **Veilige omgeving:**
+   - Zorg ervoor dat de omgeving weer veilig kan functioneren.
+   - Neem passende beveiligingsmaatregelen.
+
+2. **Documenteer aanpassingen:**
+   - Gebruik Bijlage 2.4 Logboek om aanpassingen te bewijzen.
+
+### Resultaat
+- Ingevuld onderzoeksverslag (Bijlage 2.1)
+- E-mail communicatie (Bijlage 2.2)
+- Aangepaste server (SRV002)
+- Ingevuld logboek (Bijlage 2.4)
+
+### Bijlagen
+- Bijlage 2.1 Sjabloon Onderzoeksverslag
+- Bijlage 2.2 Sjabloon E-mail
+- Bijlage 2.3 Kwetsbaarheden
+- Bijlage 2.4 Sjabloon Logboek
+
+### Einde examenproject
+Lever alle resultaten, examenopdrachten en bijlagen in bij de examinator.
+
+Deze handleiding moet je helpen om de opdrachten in volgorde uit te voeren en ervoor te zorgen dat je alle benodigde informatie vastlegt en communiceert.
