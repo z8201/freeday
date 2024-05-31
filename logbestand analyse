@@ -1,0 +1,63 @@
+Hier zijn de stappen om een logbestand in Notepad te analyseren om te bepalen of er een datalek is geweest. Je kunt deze informatie vervolgens invullen in bijlage 4.1.
+
+Stap 1: Open het Logbestand
+Open Notepad:
+
+Druk op Start en zoek naar Notepad.
+Open Notepad.
+Open het Logbestand:
+
+Klik op File > Open.
+Navigeer naar de locatie van het logbestand (bijvoorbeeld in het mapje Opdracht 4).
+Selecteer het logbestand en klik op Open.
+Stap 2: Analyseer het Logbestand
+Zoek naar Verdachte Activiteiten:
+
+Gebruik Ctrl + F om te zoeken naar specifieke termen zoals ERROR, FAILED, unauthorized, access, data, of specifieke datum en tijd.
+Let op toegangspogingen op ongebruikelijke tijden, door ongeautoriseerde accounts of grote hoeveelheden bestandstoegang.
+Details van de Logs:
+
+Noteer de relevante details zoals datum en tijd van de gebeurtenis, betrokken accounts, IP-adressen en bestanden die zijn benaderd.
+Voorbeeld Analyse
+Stel dat je de volgende informatie in het logbestand vindt:
+
+sql
+Code kopiëren
+2023-03-15 03:24:56 - User jdoe from IP 192.168.1.101 accessed 25 files in C:\SensitiveData
+2023-03-15 03:25:00 - User jdoe from IP 192.168.1.101 downloaded file sensitive_info.txt
+Invullen van Bijlage 4.1
+Overzicht hele onderzoek:
+In dit onderzoek heb ik het logbestand geanalyseerd om te bepalen of er een datalek is geweest. Het logbestand bevat informatie over toegangspogingen, bestandstoegang en verdachte activiteiten.
+
+Gedetailleerde resultaten:
+
+Datum en Tijd: 15-03-2023, 03:24 AM
+Betrokken Accounts: jdoe
+Betrokken IP-Adressen: 192.168.1.101
+Aantal Bestanden: 25 bestanden in de map C:\SensitiveData
+Conclusie:
+Op basis van de logs blijkt dat er een datalek is geweest op 15-03-2023. Het betrokken account was jdoe en het IP-adres was 192.168.1.101. Het betrof 25 bestanden in de map C:\SensitiveData.
+
+Advies:
+Het is aanbevolen om de toegangsrechten te herzien en te beperken, multifactor-authenticatie in te voeren, en regelmatig audits van de logs uit te voeren.
+
+Communicatieadvies:
+Informeer de directie, de IT-afdeling en de betrokken medewerkers over het datalek. Volg de AVG-procedures voor melding van datalekken.
+
+Managementsamenvatting:
+Er is een datalek geconstateerd op 15-03-2023 waarbij 25 bestanden zijn blootgesteld. Betrokken account was jdoe en het IP-adres was 192.168.1.101. Het wordt aanbevolen om beveiligingsmaatregelen te versterken en toegangscontroles te verbeteren.
+
+Bewijs (Screenshots)
+Voeg screenshots van de relevante delen van het logbestand toe aan bijlage 4.1. Dit kan als volgt:
+
+Maak een Screenshot:
+
+Gebruik de Print Screen toets of Snipping Tool om een screenshot te maken van de relevante logregels in Notepad.
+Plak de screenshot in een document of sla deze op als afbeelding.
+Voeg de Screenshot toe aan Bijlage 4.1:
+
+Voeg de opgeslagen afbeelding in bijlage 4.1 in de sectie voor bewijs van je bevindingen.
+Voorbeeld Screenshot
+ (Voorbeeld screenshot, vervang deze met jouw eigen screenshot)
+
+Door deze stappen te volgen, kun je het logbestand in Notepad analyseren, relevante informatie verzamelen en deze invullen in bijlage 4.1, samen met bewijs in de vorm van screenshots.
